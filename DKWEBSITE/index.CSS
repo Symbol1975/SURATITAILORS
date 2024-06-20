@@ -1,0 +1,588 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* SECTION - 1 */
+
+html { 
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+/* TOP MENU BAR  */
+
+.navbar {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgb(0, 0, 58);
+    top: 0;
+    width: 100%;
+    height: 32px;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    align-items: center;
+    color: navajowhite;
+}
+
+/* MAIN MENU BAR */
+.navbar1 {
+    display: flex;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.rightmenu1 a {
+    margin-left: 55px;
+    color: navy;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar1 H1 {
+    height: 50px;
+    color: white;
+    font-family: 'renfrew';
+    text-shadow: 0 0 5px navy, 0 0 15px navy;
+}
+
+.rightmenu1 a:hover {
+    color: blue;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: blue;
+}
+
+/* Slideshow  ==================================================================== */
+
+.image-container {
+    width: 1400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    margin-top: 123px;
+    width: 1400px;
+    height: 522px;
+    opacity: 0.6;
+}
+
+.mySlides {
+    height: 650px;
+}
+
+.dot {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    bottom: 40px;
+    margin: 0 5px 5px 0;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #ffffff;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* SECTION - 2 */
+
+#section2 {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+    background-color: rgba(233, 232, 232, 0.3);
+}
+
+#section2 .sec2leftR {
+    display: none;
+}
+
+#section2 h1 {
+    margin: 200px 0 10px 0;
+    color: brown;
+}
+
+#section2 .sec2left {
+    margin-left: 30px;
+    width: 60%;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+#section2 p {
+    margin-top: 20px;
+    color: rgb(54, 54, 54);
+}
+
+#section2 p::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: brown;
+}
+
+#section2 img {
+    height: 300px;
+    width: 300px;
+    opacity: 0.6;
+    margin-top: 250px;
+    margin-left: 110px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* SECTION - 3 */
+
+#section3 {
+    display: flex;
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+#section3 .cardmain {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#section3 .card {
+    align-items: center;
+    align-content: center;
+    margin: 200px 40px 0 40px;
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.card img {
+    height: 250px;
+    width: 250px;
+    border-radius: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.card h1 {
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: blue;
+}
+
+/* SECTION - 4 */
+
+#section4 {
+    height: 60vh;
+    background-color: rgb(0, 0, 58);
+    display: flex;
+    padding-top: 30px;
+    padding-left: 50px;
+    font-family: sans-serif;
+}
+
+#section4 hr {
+    width: 310px;
+}
+
+#section4 p {
+    line-height: 30px;
+    font-size: 15px;
+}
+
+#section4 .link {
+    width: auto;
+    color: white;
+}
+
+#section4 iframe {
+    padding-left: 0;
+}
+
+#section4 .image {
+    height: 35px;
+}
+
+#section4 img {
+    margin-left: 60px;
+    height: 130px;
+}
+
+.sec4btm1 {
+    background-color: rgb(88, 88, 88);
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sec4btm1 p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+/* ===============================================================*/
+
+/* RESPONSIVE PART */
+
+@media only screen and (max-width: 767px) {
+
+    /* SECTION - 1 */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #section1 {
+        height: 310px;
+        font-family: sans-serif;
+        overflow: hidden;
+    }
+
+    /* TOP MENU BAR  */
+
+    .navbar {
+        overflow: hidden;
+        background-color: rgb(0, 0, 58);
+        top: 0;
+        height: 25px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: space-evenly;
+        z-index: 1;
+    }
+
+    .navbar a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 8px;
+    }
+
+    .navbar a:hover {
+        align-items: center;
+        color: navajowhite;
+    }
+
+    /* MAIN MENU BAR */
+    .navbar1 {
+        display: flex;
+        overflow: hidden;
+        background-color: white;
+        height: 50px;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        margin-top: 46px;
+        z-index: 1;
+    }
+
+    .rightmenu1 a {
+        margin-left: 10px;
+        color: navy;
+        font-size: 8px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .navbar1 H1 {
+        align-items: center;
+        align-content: center;
+        height: 50px;
+        color: white;
+        font-size: 15px;
+        font-family: 'renfrew';
+        text-shadow: 0 0 5px navy, 0 0 15px navy;
+    }
+    
+    .rightmenu1 a:hover {
+        color: blue;
+        text-decoration: underline;
+        text-underline-offset: 12px;
+        text-decoration-color: blue;
+    }
+
+    /* Slideshow  ==================================================================== */
+
+    .image-container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .slideshow-container {
+        display: flex;
+        justify-content: center;
+        height: 640px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slideshow-container img {
+        margin-top: 100px;
+        width: 350px;
+        height: 200px;
+        opacity: 0.6;
+    }
+
+    .mySlides {
+        height: 650px;
+    }
+
+    .dot {
+        position: relative;
+        height: 5px;
+        width: 5px;
+        bottom: 370px;
+        margin: 0 5px 5px 0;
+        background-color: black;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #ffffff;
+    }
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 2.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* SECTION - 2 */
+
+    #section2 {
+        display: block;
+        position: relative;
+        height: 220px;
+        padding-top: 210px;
+        font-family: sans-serif;
+        overflow: hidden;
+        background-image: url('SECTION 2/SEC2IMG1.jpg');
+        background-position: top;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #section2 .sec2left {
+        display: none;
+    }
+
+    #section2 .sec2leftR {
+        display: block;
+        margin-left: 10px;
+        width: 90%;
+        font-size: 8px;
+        line-height: 10px;
+        text-align: justify;
+    }
+
+    #section2 .sec2leftR h1 {
+        margin: -70px 0 20px 10px;
+        text-align: center;
+        color: brown;
+    }
+
+    #section2 .sec2leftR p {
+        margin: 20px 15px 0 35px;
+        color: rgb(54, 54, 54);
+    }
+
+    #section2 .sec2leftR p::first-letter {
+        font-size: 150%;
+        font-weight: bold;
+        color: brown;
+    }
+
+    #section2 img {
+        display: none;
+    }
+
+    /* SECTION - 3 */
+
+    #section3 {
+        display: block;
+        position: relative;
+        height: 1250px;
+        font-family: sans-serif;
+        overflow: hidden;
+        padding-top: 100px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.500), rgba(255, 255, 255, 0.500), rgba(255, 255, 255, 0.500)), url('SECTION 3/SEC3BKG1.jpg');
+        background-position: top;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    #section3 .cardmain {
+        display: block;
+        position: relative;
+        justify-content: space-around;
+    }
+
+    #section3 .card {
+        align-items: center;
+        align-content: center;
+        margin: 20px 40px 170px 120px;
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        text-align: center;
+    }
+
+    .card img {
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .card h1 {
+        font-family: cursive;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        color: blue;
+        text-shadow: 0 0 3px white, 0 0 5px white;
+    }
+
+    .card p {
+        text-shadow: 0 0 3px white, 0 0 5px white;
+        margin-left: -50px;
+        width: 250px;
+        text-align: center;
+    }
+
+    /* SECTION - 4 */
+
+    #section4 {
+        display: block;
+        position: relative;
+        height: 1080px;
+        background-color: rgb(0, 0, 58);
+        padding-top: 30px;
+        padding-left: 20px;
+        font-family: sans-serif;
+        padding-top: 120px;
+    }
+
+    #section4 hr {
+        width: 300px;
+    }
+
+    #section4 p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    #section4 .link {
+        width: auto;
+        color: white;
+        margin-bottom: 40px;
+        ;
+    }
+
+    #section4 iframe {
+        padding-left: 0;
+    }
+
+    #section4 .image {
+        height: 35px;
+    }
+
+    #section4 img {
+        margin-left: 80px;
+        height: 130px;
+    }
+
+    .sec4btm1 {
+        background-color: rgb(88, 88, 88);
+        padding: 10px;
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 14px;
+    }
+
+    .sec4btm1 p {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+
+}

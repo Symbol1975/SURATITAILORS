@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURATI TAILORS</title>
+    <link rel="stylesheet" href="index.CSS">
+    <link rel="icon" type="image/x-icon" href="STLOGO.jpg">
+
+</head>
+
+<body>
+
+    <!-- SECTION - 1 -->
+
+    <div id="section1">
+
+        <!-- TOP MENU BAR -->
+
+        <div>
+            <nav class="navbar">
+                <a href="tel:+919979767475">Call : +919979767475</a>
+                <a href="https://wa.me/+919979767475" target="_blank"><img src="SECTION 1/WhatsApp.png" alt=""
+                        height="15px" class="image" />
+                    Whatsapp</a>
+                <a href="https://www.facebook.com/share/mVZqNXzQLtqhq1m4/?mibextid=qi2Omg" target="_blank"><img src="SECTION 1/Facebook.png" alt="" height="15px" class="image" />
+                    Facebook</a>
+                <a href="https://www.instagram.com/dhavalsurati77?utm_source=qr&igsh=bW5sNWJ4dzdvYnVy" target="_blank"><img src="SECTION 1/Instagram.png" alt="" height="15px" class="image" />
+                    Instagram</a>
+            </nav>
+        </div>
+
+        <!-- MAIN MENU BAR -->
+
+        <div class="navbar1">
+            <div class="leftimage">
+                <h1>SURATI TAILORS</h1>
+            </div>
+            <div class="rightmenu1">
+                <a href="#section1">Home</a>
+                <a href="#section2">About us</a>
+                <a href="#section3">Service</a>
+                <a href="#section4">Contact</a>
+
+            </div>
+        </div>
+
+        <!-- ======================================================================= -->
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="SECTION 1/SEC1IMG1.jpg">
+            </div>
+            <div class="mySlides fade">
+                <img src="SECTION 1/SEC1IMG2.JPG">
+            </div>
+            <div class="mySlides fade">
+                <img src="SECTION 1/SEC1IMG3.jpg">
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+        </script>
+    </div>
+
+    <!-- SECTION - 2 -->
+
+    <div id="section2">
+        <div class="sec2left">
+            <h1>SURATI TAILORS</h1>
+            <hr>
+            <p>We are the leading Ladies Outfit Designer in the market since 1958.<br></p>
+            <p>We have huge experience of our work. We are making all types of ladies outfit.
+                We are also making School Dress for students. We are working with very
+                much effort and knowledge from our experience.<br></p>
+            <p>We have too many customers to whom we made satisfied with our work from many years.
+                We are always ready to making a new design as per customer requirement.<br></p>
+            <p>
+                We are expert in making Traditional & Western outfit for ladies.
+            </p>
+        </div>
+        <div class="sec2leftR">
+            <h1>SURATI TAILORS</h1>
+            <p>We are the leading Ladies Outfit Designer in the market since 1958.<br></p>
+            <p>We have huge experience of our work. We are making all types of ladies outfit.
+                We are also making School Dress for students. We are working with very
+                much effort and knowledge from our experience.<br></p>
+            <p>We have too many customers to whom we made satisfied with our work from many years.
+                We are always ready to making a new design as per customer requirement.<br></p>
+            <p>
+                We are expert in making Traditional & Western outfit for ladies.
+            </p>
+        </div>
+        <div class="sec2right">
+            <img src="SECTION 2/SEC2IMG1.avif">
+        </div>
+    </div>
+
+    <!-- SECTION - 3 -->
+
+    <div id="section3">
+        <div class="cardmain">
+            <div class="card">
+                <img src="SECTION 3/SEC3IMG1.jpg">
+                <h1>Designer Blouse</h1>
+                <p><b>We are specialist in...</b><br> Making Simple & Designer Blouse.<br></p>
+            </div>
+            <div class="card">
+                <img src="SECTION 3/SEC3IMG2.JPG">
+                <h1>Chaniya Choli</h1>
+                <p><b>We are ready for...</b><br>Making Traditional & Fency Chaniya Choli as per customer requirement.</p>
+            </div>
+            <div class="card">
+                <img src="SECTION 3/SEC3IMG3.jpg">
+                <h1>Chudidar</h1>
+                <p><b>We know the trend of...</b><br>Designer Chudidar of current period. We always ready for new challange.</p>
+            </div>
+            <div class="card">
+                <img src="SECTION 3/SEC3IMG4.PNG">
+                <h1>School Dress</h1>
+                <p><b>Each & Every School Uniform...</b><br>We complete on time with perfect feeting of students. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION - 4 -->
+
+    <div id="section4">
+        <div class="link">
+            <h2>Quick Links</h2>
+            <br>
+            <hr>
+            <br>
+            <p>
+                Dhaval P. Surati<br>
+                Call : +91 99797 67475<br>
+                Prashant P. Surati<br>
+                Call : +91 99136 05222<br>
+                Shop : 02692-243521<br>
+                E-mail : dhavalsurati77@gmail.com
+            </p>
+        </div>
+        <div class="link">
+            <h2>Payment Links</h2>
+            <br>
+            <hr>
+            <br>
+            <p>
+                UPI id : dhavalsurati77@oksbi<br>
+                Pay on...<br>
+                <img src="SECTION 4/SEC4IMG1.jpeg" alt="Image not found">
+            </p>
+        </div>
+
+        <div class="link">
+            <h2>Address</h2>
+            <br>
+            <hr>
+            <br>
+            <p><b>SURATI TAILORS</b><br>Nr. Sharda High School,<br>Station Road,
+                <br>Anand - 388001
+        </div>
+
+        <div class="link">
+            <h2>Locate Us</h2>
+            <br>
+            <hr>
+            <br>
+            <ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471631.034189441!2d72.63130855624999!3d22.5559986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e9c565fede7%3A0xa3654e76a9bfa26f!2sSURTI%20TAILOR!5e0!3m2!1sen!2sin!4v1718816576900!5m2!1sen!2sin"
+                    width="300" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </ul>
+        </div>
+    </div>
+    <div class="sec4btm1">
+        <div class="sec10btmgray">
+            All rights are reserved to...<br>SURATI TAILORS, Station Road, Anand.<br>
+            <p>Developed by... Pratik A. Parmar [ Mo. : 9510645749 ]</p>
+        </div>
+    </div>
+</body>
+
+</html>
